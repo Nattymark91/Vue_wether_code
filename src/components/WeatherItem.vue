@@ -61,7 +61,7 @@ export default {
     },
     methods: {
         getWeather() {
-         fetch (`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&appid=aa65dec7f4fa17a5b530693cc10007a0&units=metric`)
+         fetch (`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&appid={API}&units=metric`)
         .then(response => response.json())
         .then(response => (this.info = response))
         .then(response => (this.url = require('@/img/' + response.weather[0].icon + '.jpg')));
