@@ -208,5 +208,4 @@ td:nth-child(3) {
     font-size: 3rem;
 }
 
-
 </style>
